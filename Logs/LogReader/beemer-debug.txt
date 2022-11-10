@@ -1,0 +1,207 @@
+2022-05-15T20:35:37              default - Debug: Runing QUsb2Snes version  "0.7.23"
+2022-05-15T20:35:37              default - Debug: Compiled against Qt 5.12.6 , running 5.12.6
+2022-05-15T20:35:37  SNESClassic Factory - Debug: SNES Classic device will try to connect to  "169.254.13.37"
+2022-05-15T20:35:37             WSServer - Debug: Adding Device Factory  "SNES Classic (Hakchi2CE)"
+2022-05-15T20:35:37                APPUI - Debug: Scanning  "C:/Users/Administrator/Desktop/QUsb2Snes/apps/QFile2Snes"
+2022-05-15T20:35:37                APPUI - Debug: Searching for  "C:/Users/Administrator/Desktop/QUsb2Snes/apps/QFile2Snes/qusb2snesapp.json"
+2022-05-15T20:35:37              default - Debug: "Found a json description file qusb2snesapp.json"
+2022-05-15T20:35:37                APPUI - Debug: Found an application Name :  "QFile2Snes"  Description :  "A basic file explorer for the usb2snes firmware" Folder :  "C:/Users/Administrator/Desktop/QUsb2Snes/apps/QFile2Snes" Icon :  "icone.png" Exe : "QFile2Snes" QtApp : true
+2022-05-15T20:35:37                APPUI - Debug: Adding  "C:/Users/Administrator/Desktop/QUsb2Snes/apps/QFile2Snes"  -  "QFile2Snes"
+2022-05-15T20:35:37                APPUI - Debug: Name :  "QFile2Snes"  Description :  "A basic file explorer for the usb2snes firmware" Folder :  "C:/Users/Administrator/Desktop/QUsb2Snes/apps/QFile2Snes" Icon :  "icone.png" Exe : "QFile2Snes" QtApp : true
+2022-05-15T20:35:37             WSServer - Debug: WebSocket server started : listenning  QHostAddress(QHostAddress::Any) port :  8080
+2022-05-15T20:35:37             WSServer - Debug: WebSocket server started : listenning  QHostAddress(QHostAddress::Any) port :  23074
+2022-05-15T20:35:45                APPUI - Debug: Factory Count :  1 Devices Count:  0
+2022-05-15T20:35:45                APPUI - Debug: Client count :  0
+2022-05-15T20:35:45  SNESClassic Factory - Debug: devices Status
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Trying to connect to serverstuff
+2022-05-15T20:35:45             WSServer - Debug: Number of factory to check 1
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Socket state changed QAbstractSocket::HostLookupState
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Socket state changed QAbstractSocket::ConnectingState
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Socket state changed QAbstractSocket::ConnectedState
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Connected
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Checkstuff called SNESClassicFactory::StatusState::NO_CHECK
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Executing :  "pidof canoe-shvc"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: >> "CMD pidof canoe-shvc\n"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Received :  6  bytes "31935\n"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Received :  4  bytes "31935\n\x00\x00\x00\x00"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Executing :  "canoe-shvc --version"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: >> "CMD canoe-shvc --version\n"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Received :  41  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Received :  4  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n\x00\x00\x00\x00"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Executing :  "ps | grep canoe-shvc | grep -v grep"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: >> "CMD ps | grep canoe-shvc | grep -v grep\n"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Received :  634  bytes "31935 root     30:14 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Received :  4  bytes "31935 root     30:14 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n\x00\x00\x00\x00"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:35:45  SNESClassic Factory - Debug: >> "READ_MEM 31935 1dff84 4\n"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Received :  4  bytes "\b\x90\xD5\xB4"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Executing :  "pmap 31935 -x -q | grep -v canoe-shvc | grep -v /lib | grep rwx"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: >> "CMD pmap 31935 -x -q | grep -v canoe-shvc | grep -v /lib | grep rwx\n"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Timeout  QAbstractSocket::ConnectedState
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Received :  1499  bytes "001e0000    5092     980     980       0  rwxp    [ anon ]\n0117e000     608     608     608       0  rwxp  [heap]\nb3701000    2044       8       8       0  rwxp  [stack:31987]\nb3900000     132       4       4       0  rwxp    [ anon ]\nb3a49000    2044       8       8       0  rwxp  [stack:31986]\nb3c49000    2044       8       8       0  rwxp  [stack:31985]\nb3e48000    7200       0       0       0  rwxs  /dev/fb0\nb4550000     724     388     388       0  rwxp    [ anon ]\nb4606000    2044       8       8       0  rwxp  [stack:31984]\nb4806000    2044       8       8       0  rwxp  [stack:31983]\nb4aff000    1028     488     488       0  rwxp    [ anon ]\nb4c00000     132       4       4       0  rwxp    [ anon ]\nb4d1a000    5668    5108    5108       0  rwxp    [ anon ]\nb52a3000    2048       0       0       0  rwxs  /dev/mali\nb5bac000    2044       8       8       0  rwxp  [stack:31981]\nb5dac000    2044       8       8       0  rwxp  [stack:31980]\nb5fdd000    8196    8196    8196       0  rwxp    [ anon ]\nb67df000    2044       8       8       0  rwxp  [stack:31978]\nb6b13000      12      12      12       0  rwxp    [ anon ]\nb6cc3000      24      12      12       0  rwxp    [ anon ]\nb6d07000       8       4       4       0  rwxp    [ anon ]\nb6f5e000       8       8       8       0  rwxp    [ anon ]\nb6f80000       8       0       0       0  rwxs  /dev/snd/pcmC0D0p\nb6f84000      44      28      28       0  rwxp  [stack:31982]\nbef1f000     132      24      24       0  rwxp  [stack]\n"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Received :  4  bytes "001e0000    5092     980     980       0  rwxp    [ anon ]\n0117e000     608     608     608       0  rwxp  [heap]\nb3701000    2044       8       8       0  rwxp  [stack:31987]\nb3900000     132       4       4       0  rwxp    [ anon ]\nb3a49000    2044       8       8       0  rwxp  [stack:31986]\nb3c49000    2044       8       8       0  rwxp  [stack:31985]\nb3e48000    7200       0       0       0  rwxs  /dev/fb0\nb4550000     724     388     388       0  rwxp    [ anon ]\nb4606000    2044       8       8       0  rwxp  [stack:31984]\nb4806000    2044       8       8       0  rwxp  [stack:31983]\nb4aff000    1028     488     488       0  rwxp    [ anon ]\nb4c00000     132       4       4       0  rwxp    [ anon ]\nb4d1a000    5668    5108    5108       0  rwxp    [ anon ]\nb52a3000    2048       0       0       0  rwxs  /dev/mali\nb5bac000    2044       8       8       0  rwxp  [stack:31981]\nb5dac000    2044       8       8       0  rwxp  [stack:31980]\nb5fdd000    8196    8196    8196       0  rwxp    [ anon ]\nb67df000    2044       8       8       0  rwxp  [stack:31978]\nb6b13000      12      12      12       0  rwxp    [ anon ]\nb6cc3000      24      12      12       0  rwxp    [ anon ]\nb6d07000       8       4       4       0  rwxp    [ anon ]\nb6f5e000       8       8       8       0  rwxp    [ anon ]\nb6f80000       8       0       0       0  rwxs  /dev/snd/pcmC0D0p\nb6f84000      44      28      28       0  rwxp  [stack:31982]\nbef1f000     132      24      24       0  rwxp  [stack]\n\x00\x00\x00\x00"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "001e0000    5092     980     980       0  rwxp    [ anon ]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "0117e000     608     608     608       0  rwxp  [heap]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b3701000    2044       8       8       0  rwxp  [stack:31987]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b3900000     132       4       4       0  rwxp    [ anon ]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b3a49000    2044       8       8       0  rwxp  [stack:31986]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b3c49000    2044       8       8       0  rwxp  [stack:31985]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b3e48000    7200       0       0       0  rwxs  /dev/fb0"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b4550000     724     388     388       0  rwxp    [ anon ]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b4606000    2044       8       8       0  rwxp  [stack:31984]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b4806000    2044       8       8       0  rwxp  [stack:31983]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b4aff000    1028     488     488       0  rwxp    [ anon ]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b4c00000     132       4       4       0  rwxp    [ anon ]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b4d1a000    5668    5108    5108       0  rwxp    [ anon ]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b52a3000    2048       0       0       0  rwxs  /dev/mali"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b5bac000    2044       8       8       0  rwxp  [stack:31981]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b5dac000    2044       8       8       0  rwxp  [stack:31980]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b5fdd000    8196    8196    8196       0  rwxp    [ anon ]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b67df000    2044       8       8       0  rwxp  [stack:31978]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b6b13000      12      12      12       0  rwxp    [ anon ]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b6cc3000      24      12      12       0  rwxp    [ anon ]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b6d07000       8       4       4       0  rwxp    [ anon ]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b6f5e000       8       8       8       0  rwxp    [ anon ]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b6f80000       8       0       0       0  rwxs  /dev/snd/pcmC0D0p"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "b6f84000      44      28      28       0  rwxp  [stack:31982]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: "bef1f000     132      24      24       0  rwxp  [stack]"
+2022-05-15T20:35:45  SNESClassic Factory - Debug: ""
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Mem location 1976032 3053310008 3034029044
+2022-05-15T20:35:45  SNESClassic Factory - Debug: Check success DL - DS false true
+2022-05-15T20:35:45             WSServer - Debug: DeviceFactory status done :  1 / 1
+2022-05-15T20:35:45                APPUI - Debug: Receveid status for "SNES Classic"
+2022-05-15T20:35:45                APPUI - Debug: Added devfact status :  "SNES Classic : SNES Classic device ready"
+2022-05-15T20:35:58             WSServer - Debug: New connection from  ""
+2022-05-15T20:35:58             WSServer - Debug: New connection accepted  "Websocket 1f6024f0640" "" QHostAddress("::1")
+2022-05-15T20:35:59             WSServer - Debug: "Websocket 1f6024f0640" received  "{\"Opcode\":\"DeviceList\",\"Space\":\"SNES\",\"Flags\":null,\"Operands\":null}"
+2022-05-15T20:35:59             WSServer - Debug: Request is  USB2SnesWS::DeviceList
+2022-05-15T20:35:59             WSServer - Debug: Executing server request :  0 Created at QTime("20:35:59.073") - USB2SnesWS::DeviceList SD2Snes::SNES () () WSServer::RequestState::NEW for "Websocket 1f6024f0640"
+2022-05-15T20:35:59             WSServer - Debug: Async device list
+2022-05-15T20:35:59  SNESClassic Factory - Debug: List devices
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Checkstuff called SNESClassicFactory::StatusState::NO_CHECK
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Executing :  "pidof canoe-shvc"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: >> "CMD pidof canoe-shvc\n"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Received :  6  bytes "31935\n"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Received :  4  bytes "31935\n\x00\x00\x00\x00"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Executing :  "canoe-shvc --version"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: >> "CMD canoe-shvc --version\n"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Received :  41  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Received :  4  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n\x00\x00\x00\x00"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Executing :  "ps | grep canoe-shvc | grep -v grep"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: >> "CMD ps | grep canoe-shvc | grep -v grep\n"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Received :  634  bytes "31935 root     30:26 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Received :  4  bytes "31935 root     30:26 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n\x00\x00\x00\x00"
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Check success DL - DS true false
+2022-05-15T20:35:59  SNESClassic Factory - Debug: Creating SNES Classic device
+2022-05-15T20:35:59          SNESClassic - Debug: Creating SNES Classic device
+2022-05-15T20:35:59          SNESClassic - Debug: Connecting to serverstuff  "169.254.13.37"
+2022-05-15T20:35:59             WSServer - Debug: Received a device name :  "SNES Classic"
+2022-05-15T20:35:59             WSServer - Debug: "SNES Classic (Hakchi2CE)"  is done doing devicelist
+2022-05-15T20:35:59          SNESClassic - Debug: Connected to serverstuff
+2022-05-15T20:37:44             WSServer - Debug: Client error :  "Websocket 1f6024f0640" QAbstractSocket::RemoteHostClosedError "Unknown error"
+2022-05-15T20:37:44             WSServer - Debug: Websocket disconnected "Websocket 1f6024f0640"
+2022-05-15T20:37:44             WSServer - Debug: Cleaning up wsocket "Websocket 1f6024f0640"
+2022-05-15T20:38:35                APPUI - Debug: Factory Count :  1 Devices Count:  0
+2022-05-15T20:38:35                APPUI - Debug: Client count :  0
+2022-05-15T20:38:35  SNESClassic Factory - Debug: devices Status
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Checkstuff called SNESClassicFactory::StatusState::NO_CHECK
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Executing :  "pidof canoe-shvc"
+2022-05-15T20:38:35  SNESClassic Factory - Debug: >> "CMD pidof canoe-shvc\n"
+2022-05-15T20:38:35             WSServer - Debug: Number of factory to check 1
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Received :  6  bytes "31935\n"
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Received :  4  bytes "31935\n\x00\x00\x00\x00"
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Executing :  "canoe-shvc --version"
+2022-05-15T20:38:35  SNESClassic Factory - Debug: >> "CMD canoe-shvc --version\n"
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Received :  41  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n"
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Received :  4  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n\x00\x00\x00\x00"
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Executing :  "ps | grep canoe-shvc | grep -v grep"
+2022-05-15T20:38:35  SNESClassic Factory - Debug: >> "CMD ps | grep canoe-shvc | grep -v grep\n"
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Received :  634  bytes "31935 root     32:54 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n"
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Received :  4  bytes "31935 root     32:54 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n\x00\x00\x00\x00"
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:38:35  SNESClassic Factory - Debug: Check success DL - DS false true
+2022-05-15T20:38:35             WSServer - Debug: DeviceFactory status done :  1 / 1
+2022-05-15T20:38:35                APPUI - Debug: Receveid status for "SNES Classic"
+2022-05-15T20:38:35                APPUI - Debug: Added devfact status :  "SNES Classic : SNES Classic device ready"
+2022-05-15T20:38:52             WSServer - Debug: New connection from  ""
+2022-05-15T20:38:52             WSServer - Debug: New connection accepted  "Websocket 1f6024f0640" "" QHostAddress("::1")
+2022-05-15T20:38:52             WSServer - Debug: "Websocket 1f6024f0640" received  "{\"Opcode\":\"DeviceList\",\"Space\":\"SNES\",\"Flags\":null,\"Operands\":null}"
+2022-05-15T20:38:52             WSServer - Debug: Request is  USB2SnesWS::DeviceList
+2022-05-15T20:38:52             WSServer - Debug: Executing server request :  1 Created at QTime("20:38:52.483") - USB2SnesWS::DeviceList SD2Snes::SNES () () WSServer::RequestState::NEW for "Websocket 1f6024f0640"
+2022-05-15T20:38:52             WSServer - Debug: Async device list
+2022-05-15T20:38:52  SNESClassic Factory - Debug: List devices
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Checkstuff called SNESClassicFactory::StatusState::NO_CHECK
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Executing :  "pidof canoe-shvc"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: >> "CMD pidof canoe-shvc\n"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Received :  6  bytes "31935\n"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Received :  4  bytes "31935\n\x00\x00\x00\x00"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Executing :  "canoe-shvc --version"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: >> "CMD canoe-shvc --version\n"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Received :  41  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Received :  4  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n\x00\x00\x00\x00"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Executing :  "ps | grep canoe-shvc | grep -v grep"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: >> "CMD ps | grep canoe-shvc | grep -v grep\n"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Received :  634  bytes "31935 root     33:11 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Received :  4  bytes "31935 root     33:11 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n\x00\x00\x00\x00"
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:38:52  SNESClassic Factory - Debug: Check success DL - DS true false
+2022-05-15T20:38:52             WSServer - Debug: Received a device name :  "SNES Classic"
+2022-05-15T20:38:52             WSServer - Debug: "SNES Classic (Hakchi2CE)"  is done doing devicelist
+2022-05-15T20:38:57                APPUI - Debug: Factory Count :  1 Devices Count:  0
+2022-05-15T20:38:57                APPUI - Debug: Client count :  1
+2022-05-15T20:38:57  SNESClassic Factory - Debug: devices Status
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Checkstuff called SNESClassicFactory::StatusState::NO_CHECK
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Executing :  "pidof canoe-shvc"
+2022-05-15T20:38:57  SNESClassic Factory - Debug: >> "CMD pidof canoe-shvc\n"
+2022-05-15T20:38:57             WSServer - Debug: Number of factory to check 1
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Received :  6  bytes "31935\n"
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Received :  4  bytes "31935\n\x00\x00\x00\x00"
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Executing :  "canoe-shvc --version"
+2022-05-15T20:38:57  SNESClassic Factory - Debug: >> "CMD canoe-shvc --version\n"
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Received :  41  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n"
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Received :  4  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n\x00\x00\x00\x00"
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Executing :  "ps | grep canoe-shvc | grep -v grep"
+2022-05-15T20:38:57  SNESClassic Factory - Debug: >> "CMD ps | grep canoe-shvc | grep -v grep\n"
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Received :  634  bytes "31935 root     33:15 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n"
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Received :  4  bytes "31935 root     33:15 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n\x00\x00\x00\x00"
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:38:57  SNESClassic Factory - Debug: Check success DL - DS false true
+2022-05-15T20:38:57             WSServer - Debug: DeviceFactory status done :  1 / 1
+2022-05-15T20:38:57                APPUI - Debug: Receveid status for "SNES Classic"
+2022-05-15T20:38:57                APPUI - Debug: Added devfact status :  "SNES Classic : SNES Classic device ready"
+2022-05-15T20:39:01                APPUI - Debug: Factory Count :  1 Devices Count:  0
+2022-05-15T20:39:01                APPUI - Debug: Client count :  1
+2022-05-15T20:39:01  SNESClassic Factory - Debug: devices Status
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Checkstuff called SNESClassicFactory::StatusState::NO_CHECK
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Executing :  "pidof canoe-shvc"
+2022-05-15T20:39:01  SNESClassic Factory - Debug: >> "CMD pidof canoe-shvc\n"
+2022-05-15T20:39:01             WSServer - Debug: Number of factory to check 1
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Received :  6  bytes "31935\n"
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Received :  4  bytes "31935\n\x00\x00\x00\x00"
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Executing :  "canoe-shvc --version"
+2022-05-15T20:39:01  SNESClassic Factory - Debug: >> "CMD canoe-shvc --version\n"
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Received :  41  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n"
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Received :  4  bytes "fc349ac43140141277d2d6f964c1ee361fcd20ca\n\x00\x00\x00\x00"
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Executing :  "ps | grep canoe-shvc | grep -v grep"
+2022-05-15T20:39:01  SNESClassic Factory - Debug: >> "CMD ps | grep canoe-shvc | grep -v grep\n"
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Received :  634  bytes "31935 root     33:19 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n"
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Received :  4  bytes "31935 root     33:19 canoe-shvc -rollback-snapshot-period 720 -rom /tmp/rom/rom.sfrom --volume 100 -rollback-snapshot-period 600 --sram-file /var/lib/clover/profiles/0/CLV-U-GFINE/cartridge.sram --save-time-path /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.time --wait-transition-fd 12 --start-transition-fd 13 --finish-transition-fd 14 --save-screenshot-on-quit /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/state.png -rollback-mode 1 --rollback-ui /usr/share/canoe/rollback-ui --enable-sram-file-hash -rollback-output-dir /var/cache/clover//volatile/CLV-U-GFINE/suspendpoint0/rollback/ -filter 1 -magfilter 3\n\x00\x00\x00\x00"
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Command finished, triming the 4 trailing 0
+2022-05-15T20:39:01  SNESClassic Factory - Debug: Check success DL - DS false true
+2022-05-15T20:39:01             WSServer - Debug: DeviceFactory status done :  1 / 1
+2022-05-15T20:39:01                APPUI - Debug: Receveid status for "SNES Classic"
+2022-05-15T20:39:01                APPUI - Debug: Added devfact status :  "SNES Classic : SNES Classic device ready"
