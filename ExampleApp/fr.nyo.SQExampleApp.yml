@@ -1,9 +1,8 @@
-
 app-id: fr.nyo.SQExampleApp
 runtime: org.kde.Platform
-runtime-version: '5.15-22.08'
+runtime-version: 6.4
 sdk: org.kde.Sdk
-command: SQExampleApp
+command: 
 finish-args:
     - --socket=x11
     - --socket=wayland
@@ -13,4 +12,4 @@ modules:
       buildsystem: qmake
       sources:
        - type: dir
-         path: I:/Project/SkarsnikQtCommon/ExampleApp
+         path: /home/skarsnik/SkarsnikQtCommon/
