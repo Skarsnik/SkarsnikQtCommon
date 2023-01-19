@@ -4,5 +4,6 @@
     "org" : "fr.nyo",
     "short-description" : "An example of SQProject",
     "description" : "SQExample app is a dummy application to test various feature of a SQProject",
-    "icon" : "icon.png"
+    "icon" : "QtProject-creator-icon.png",
+    "desktop-categories" : ["Utility"]
 }
