@@ -2,7 +2,7 @@ app-id: fr.nyo.SQExampleApp
 runtime: org.kde.Platform
 runtime-version: 6.4
 sdk: org.kde.Sdk
-command: "SQExampleApp"
+command: SQExampleApp
 finish-args:
     - --socket=x11
     - --socket=wayland
@@ -10,12 +10,12 @@ finish-args:
 modules:
     - name: SQExampleApp
       buildsystem: simple
-      subdir: ExampleApp
       builddir: true
       no-make-install: true
       build-commands:
-        - "sh sqpackager_build.sh"
-        - "sh sqpackager_install.sh"
+        - "sh flatpak_sqpackager_build.sh"
+        - "sh flatpak_sqpackager_install.sh"
       sources:
        - type: dir
-         path: /home/skarsnik/SkarsnikQtCommon/
+         path: /home/skarsnik/SkarsnikQtCommon
+      subdir: ExampleApp

@@ -24,3 +24,4 @@ FORMS += \
 DISTFILES += \
     sqproject.json
 
+TARGET = SQExampleApp
