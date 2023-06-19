@@ -1,0 +1,36 @@
+name: SQPackager Windows build
+
+on:
+  push:
+    branches: [testworkflow]
+    tags:
+      - '*'
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  compile:
+    runs-on: windows-latest
+    steps:
+      - uses: egor-tensin/vs-shell@v2
+        with:
+          arch: x64
+      - uses: anthepro/install-qt-static@v1
+        with:
+          version: 5.15.12
+          configure-args: -opensource -opengl desktop
+          submodules: defaults
+          dir: C:/qt-static/
+      -
+        name: Checkout
+        uses: actions/checkout@v2
+        with: 
+          submodules : true
+      -
+        name: build
+        run: |
+          cd SQPackager/
+          C:/qt-static/bin/qmake.exe SQPackager.pro -spec win32-msvc "CONFIG+=release" "CONFIG+=static"
+          jom
+        
