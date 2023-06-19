@@ -33,4 +33,10 @@ jobs:
           cd SQPackager/
           C:/qt-static/bin/qmake.exe SQPackager.pro -spec win32-msvc "CONFIG+=release" "CONFIG+=static"
           nmake
-        
+      -
+        name: Upload 7zip
+        uses: actions/upload-artifact@v2
+        with:
+          name: SQPackager.exe
+          path: SQPackager/release/SQPackager.exe
+
