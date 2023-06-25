@@ -30,4 +30,4 @@
  */
 
 
-void    installSQLogging(const QString& fileBaseName, const QString& debugFileBaseName, bool debugEnabled, const QString& crashFile);
+void    installSQLogging(const QString& fileBaseName, const QString &debugFileBaseName = "debug-log.txt", bool debugEnabled = false , const QString &crashFile = "");
