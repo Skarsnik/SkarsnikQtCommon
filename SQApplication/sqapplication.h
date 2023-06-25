@@ -4,6 +4,7 @@
 #include <QStandardPaths>
 #include <QSettings>
 #include <QObject>
+#include <QTranslator>
 
 /*/
  * Default mode is standalone, it's not really great when people
@@ -41,6 +42,7 @@ public:
     bool        isStandalone() const;
     bool        createSettings();
     QSettings*  settings();
+    bool        setTranslation(const QString& fileSuffix);
 
 // sqlogging pri file set this define
 #ifdef SQ_PROJECT_HAS_LOGGING
@@ -68,6 +70,7 @@ public:
     static SQApplication*   instance();
 private:
     static SQApplication*   self;
+    QTranslator*            m_translator;
     QString                 m_logFilename;
     QSettings*              m_settings;
     QString                 m_debugLogFilename;

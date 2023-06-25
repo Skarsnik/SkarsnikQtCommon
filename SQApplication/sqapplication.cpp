@@ -1,4 +1,5 @@
 #include <QStandardPaths>
+#include <QTranslator>
 #include <sqapplication.h>
 
 
@@ -52,6 +53,14 @@ bool SQApplication::createSettings()
 QSettings* SQApplication::settings()
 {
     return m_settings;
+}
+
+bool SQApplication::setTranslation(const QString &fileSuffix)
+{
+    m_translator = new QTranslator();
+    QString locale = QLocale::system().name().split('_').first();
+    //FIXME this should use a dedicated path system, see SQPath
+    return m_translator->load(self->applicationDirPath() + "/i18n/" + fileSuffix + locale + ".qm");
 }
 
 
