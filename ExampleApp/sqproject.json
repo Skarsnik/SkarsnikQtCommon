@@ -6,5 +6,6 @@
     "description" : "SQExample app is a dummy application to test various feature of a SQProject",
     "icon" : "QtProject-creator-icon.png",
     "desktop-categories" : ["Utility"],
-    "project-base-path" :  "../"
+    "project-base-path" :  "../",
+    "translations-dir" : "translations"
 }

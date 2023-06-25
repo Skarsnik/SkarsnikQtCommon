@@ -24,4 +24,8 @@ FORMS += \
 DISTFILES += \
     sqproject.json
 
+TRANSLATIONS += \
+    translations/exampleapp_fr.ts \
+    translations/exampleapp_de.ts
+
 TARGET = SQExampleApp
