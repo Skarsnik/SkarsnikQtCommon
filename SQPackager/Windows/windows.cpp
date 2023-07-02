@@ -229,6 +229,12 @@ void    buildWindows(ProjectDefinition& project)
     stuff.deployBasePath = gOptions.windowsDeployPath;
     stuff.buildBasePath = gOptions.windowsBuildPath;
 
+    println("===========ENV=========");
+    for (QString key : QProcessEnvironment::systemEnvironment().keys())
+    {
+        println(key + "=" + QProcessEnvironment::systemEnvironment().value(key));
+    }
+
     //runner.setEnv(QProcessEnvironment::systemEnvironment());
     println("===== Building for Windows =====");
     findQtVersion();
@@ -610,6 +616,7 @@ void findQtVersion()
     if (true)
     {
         print("Trying to find QMake in Qt installation");
+        println("$HOME :" + QProcessEnvironment::systemEnvironment().value("HOME"));
         if ((QFileInfo::exists("C:\\Qt")
              || QProcessEnvironment::systemEnvironment().contains("Qt6_DIR")
              || QProcessEnvironment::systemEnvironment().contains("Qt5_DIR")) == false)

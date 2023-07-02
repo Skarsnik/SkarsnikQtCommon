@@ -6,7 +6,7 @@ name: Windows build Qt6
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [ testworkflow ]
     tags:
       - '*'
   pull_request:
@@ -30,7 +30,7 @@ jobs:
         name: Install Qt
         uses: jurplel/install-qt-action@v3
         with:
-          version: '6.4.1'
+          version: '6.4.3'
       -
         name: build
         id: build
@@ -38,8 +38,13 @@ jobs:
               cd SQPackager
               qmake SQPackager.pro -spec win32-msvc "CONFIG+=release"
               nmake
-              release/SQPackager.exe --build windows ExampleApp/sqproject.json
+              cd ..
+              ls $env:HOME
+              ls $env:HOME/../
+              SQPackager/release/SQPackager.exe --build windows ExampleApp/sqproject.json
       -
          name: print output
          run: |
-               echo "Standalone zip : $${steps.build.outputs.sqpackager_win32_x64_standalone_zip}}"
+               echo "Standalone zip : ${{steps.build.outputs.sqpackager_win32_x64_standalone_zip}}"
+               echo "Standalone 7zip : ${{steps.build.outputs.sqpackager_win32_x64_standalone_7zip}}"
+               echo "Innosetup Installer : ${{steps.build.outputs.sqpackager_win32_x64_innosetup}}"
