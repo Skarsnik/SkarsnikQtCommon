@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  compile:
+  compile_static:
     runs-on: windows-latest
     steps:
       - uses: egor-tensin/vs-shell@v2
