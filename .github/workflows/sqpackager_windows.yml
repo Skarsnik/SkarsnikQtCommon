@@ -2,7 +2,7 @@ name: SQPackager Windows build
 
 on:
   push:
-    branches: [testworkflow]
+    branches: [testworkflowfrfe]
     tags:
       - '*'
   pull_request:

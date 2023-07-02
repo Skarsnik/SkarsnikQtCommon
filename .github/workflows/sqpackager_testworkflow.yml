@@ -1,0 +1,27 @@
+name: SQPackager test workflow
+
+on:
+  push:
+    branches: [testworkflow]
+    tags:
+      - '*'
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  testouput:
+    runs-on: windows-latest
+    steps:
+      -
+         name: Checkout
+         uses: actions/checkout@v2
+         with: 
+           submodules : true
+      -  name: test injecting
+         id: piko
+         run: sh .\SQPackager\setouput.sh
+      -  name: printing
+         run: |
+               echo "release is ${{ steps.piko.outputs.sqpackager_win_x86_standalone }}"
+               echo $env:GITHUB_OUTPUT
