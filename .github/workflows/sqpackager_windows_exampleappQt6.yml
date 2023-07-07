@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Windows build Qt6
+name: SQPackager ExampleApp build Qt6
 
 # Controls when the workflow will run
 on:
@@ -30,7 +30,7 @@ jobs:
         name: Install Qt
         uses: jurplel/install-qt-action@v3
         with:
-          version: '6.4.3'
+          version: '6.5.1'
       -
         name: build
         id: build
