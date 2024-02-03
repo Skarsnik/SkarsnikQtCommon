@@ -1,5 +1,7 @@
 {
     "name" : "SQExampleApp",
+    "author" : "Sylvain Colinet",
+    "author-mail" : "scolinet@gmail.com",
     "pro-file" : "ExampleApp.pro",
     "org" : "fr.nyo",
     "short-description" : "An example of SQProject",
