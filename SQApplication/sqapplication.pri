@@ -1,3 +1,4 @@
+
 INCLUDEPATH += $$PWD/
 ___HAS_GIT = 0
 system('git rev-parse --is-inside-work-tree') {
@@ -18,5 +19,7 @@ equals(___HAS_GIT, 1) {
 
 SOURCES +=  $$PWD/sqapplication.cpp
 
-HEADERS += $$PWD/sqapplication.h
+HEADERS += $$PWD/sqapplication.h \
+           $$PWD/sqpath.h \
+           $$PWD/sqpath.h
 

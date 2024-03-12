@@ -5,13 +5,12 @@
 #include <QSettings>
 #include <QObject>
 #include <QTranslator>
-
 /*/
  * Default mode is standalone, it's not really great when people
  * just want to build the app, but it ensure to keep it standalone
  * when developping
  */
-#ifndef SQPROJECT_WIN32_INSTALL
+#if !defined(SQPROJECT_WIN32_INSTALL) || !defined(SQPROJECT_UNIX_INSTALL)
 #define SQPROJECT_STANDALONE
 #endif
 #ifdef SQPROJECT_WIN32_STANDALONE
@@ -29,6 +28,7 @@
 #define _SQAPPLICATION_BASE_QT_TYPE QCoreApplication
 #endif
 
+#include "sqpath.h"
 #define sqApp   SQApplication::instance()
 
 class SQApplication : public _SQAPPLICATION_BASE_QT_TYPE
@@ -56,10 +56,7 @@ public:
     }
     QString     logDirectoryPath() const
     {
-    #ifdef SQPROJECT_STANDALONE
-        return applicationDirPath();
-    #endif
-        return QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+        return SQPath::logDirectoryPath();
     }
     QString     logFileName() const {return m_logFilename;}
     QString     debugLogFileName() const {return m_debugLogFilename;}
