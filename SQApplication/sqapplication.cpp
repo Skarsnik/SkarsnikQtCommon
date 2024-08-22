@@ -9,6 +9,7 @@ SQApplication::SQApplication(int &argc, char **argv) : _SQAPPLICATION_BASE_QT_TY
 {
     Q_ASSERT_X(!SQApplication::self, "SQApplication", "there should be only one SQApplication instance");
     SQApplication::self = this;
+    m_settings = nullptr;
 }
 
 bool SQApplication::hasGitInformation() const
@@ -46,8 +47,19 @@ bool SQApplication::isStandalone() const
 
 bool SQApplication::createSettings()
 {
+    if (applicationName().isEmpty())
+        return false;
     if (isStandalone())
-        return true;
+    {
+        m_settings = new QSettings(applicationDirPath() + "/" + applicationName() + ".ini", QSettings::IniFormat);
+    } else {
+#ifdef Q_OS_WIN
+        m_settings = new QSettings(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/" + applicationName() + ".ini", QSettings::IniFormat);
+#else
+        m_settings = new QSetting();
+#endif
+    }
+    return true;
 }
 
 QSettings* SQApplication::settings()
